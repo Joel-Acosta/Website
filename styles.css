@@ -1,91 +1,266 @@
 /*universal*/
 
-* {
-    background-color: hsl(215, 91%, 17%);
-    max-width: 1900px;
-    max-height: 1000px;
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  background-color: hsl(215, 89%, 14%);
 }
 
 /*header*/
 
 h1 {
-    color: #88e1fc;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+  color: #88e1fc;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
 }
 
 h2 {
-    color: #88e1fc;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+  color: #88e1fc;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
 }
 
 /*main*/
+/*colors section*/
 .colors h3 {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    background-color: transparent;
-
-  
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  overflow: hidden;
+  align-items: center;
 }
 
-.colors p {
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    background-color: transparent;
+.colors p,
+.fonts p,
+.styles p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  background-color: olive;
+  height: 50%;
+
+}
+
+
+.colors,
+.fonts,
+.styles {
+  width: 400px;
+  height: 300px;
+  margin: 40px;
+  display: inline-block;
     
+}
+
+.colors img,
+.fonts img,
+.styles img {
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  border-radius: 15px;
   
 }
 
-.colors{
-    border: 2px solid darkgray;
-    height: 500px;
-    width: 100%;
-    background-image: url(./images/color-back.jpg);
-
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.color-6 {
+  border: 1px solid white;
+  height: auto;
+  width: 15%;
+  display: inline-block;
+  border-radius: 15px;
+  border: 5px solid white;
+  margin: 0;
+  margin-bottom: 50px;
+  position: relative;
+  left: 4%;
+  bottom: 20px;
+  overflow: hidden;
 }
 
-.color-1, .color-2, .color-3, .color-4, .color-5, .color-6{
-    
-    border: 1px solid white;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    border-radius: 40px;
-    border: 3px solid white;
-    margin:  2px;
-    position: relative;
+.color-1:hover {
+  background-color: hsl(9, 79%, 27%);
 }
 
-.color-1{
-    background-color: #a82a14;
+.color-1 {
+  background-color: hsl(9, 79%, 37%);
 }
 
-.color-2{
-    background-color: #2b11c0;
-  
-}
-.color-3{
-    background-color: #156d03;
+.color-2 {
+  background-color: hsl(249, 84%, 41%);
 }
 
-.color-4{
-    background-color: #c4c006;
+.color-2:hover {
+  background-color: hsl(249, 84%, 31%);
 }
 
-.color-5{
-    background-color: #000000;
+.color-3 {
+  background-color: hsl(110, 95%, 22%);
 }
 
-.color-6{
-    background-color: #3d0d74;
+.color-3:hover {
+  background-color: hsl(110, 95%, 12%);
+  /*position:0 0 sticky;*/
+  border: 20px solid hsl(110, 95%, 12%);
+  width: 20%;
+  display: ruby;
+  z-index: 10;
 }
 
+.color-4 {
+  background-color: hsl(59, 94%, 40%);
+}
+
+.color-4:hover {
+  background-color: hsl(59, 94%, 30%);
+}
+
+.color-5 {
+  background-color: hsl(0, 0%, 5%);
+}
+
+.color-5:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.color-6 {
+  background-color: hsl(268, 80%, 25%);
+}
+
+.color-6:hover {
+  background-color: hsl(268, 80%, 15%);
+}
+
+/*fonts section*/
 
 
+.fonts h3 {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: double;
+  background-color: rgb(161, 116, 160);
+}
+
+h4,
+h5,
+h6 {
+  font-size: 20px;
+}
+
+.font-1,
+.font-2,
+.font-3,
+.font-4 {
+  border: 6px double rgb(3, 64, 105);
+  display: inline-block;
+  position: relative;
+  margin: 50px;
+  padding: 20px;
+  width: 40%;
+  height: 35%;
+  left: 50px;
+  text-align: center;
+}
+
+.font-1 {
+  font-family: monospace;
+}
+
+.font-1 h4 {
+  background-color: white;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.font-1 h5 {
+  background-color: white;
+  font-weight: normal;
+  margin: 20px;
+}
+
+.font-1 h6 {
+  background-color: white;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.font-2 {
+  font-family: "Lucida Sans";
+}
+
+.font-2 h4 {
+  background-color: white;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.font-2 h5 {
+  background-color: white;
+  font-weight: normal;
+  margin: 20px;
+}
+
+.font-2 h6 {
+  background-color: white;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.font-3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-3 h4 {
+  background-color: white;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.font-3 h5 {
+  background-color: white;
+  font-weight: normal;
+  margin: 20px;
+}
+
+.font-3 h6 {
+  background-color: white;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.font-4 {
+  font-family: "Franklin Gothic Medium";
+
+  top: -20px;
+}
+
+.font-4 h4 {
+  background-color: white;
+  font-weight: lighter;
+  margin: 20px;
+}
+
+.font-4 h5 {
+  background-color: white;
+  font-weight: normal;
+  margin: 20px;
+}
+
+.font-4 h6 {
+  background-color: white;
+  font-weight: bold;
+  margin: 20px;
+}
 /*footer*/
-
